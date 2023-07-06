@@ -1,0 +1,33 @@
+Documentation for the Endless 2D Arcade Game in Unity:
+
+Introduction:
+The Endless 2D Arcade Game is an engaging and addictive arcade game built in Unity. The game features two connected game objects controlled by the player to avoid obstacles and achieve a high score. This documentation provides an overview of the game, its technical aspects, and the Unity technologies utilized in its development.
+
+1.Game Mechanics:
+
+The game consists of two game objects connected by a connector.
+The player can tap or hold the left side of the screen to move/stay left, and do the same on the right side to move/stay right.
+The player must navigate the connected objects through obstacles by tapping both sides simultaneously to disconnect and pass through.
+Obstacles appear randomly, and the game continues endlessly until the player collides with an obstacle.
+
+2.Unity Technologies Used:
+
+Unity Engine: The game is built using the Unity engine, providing a robust and efficient framework for game development.
+C# Scripting: The game logic and functionality are implemented using C# scripts, enabling customization and extensibility.
+Game Manager: A game manager script handles the game's overall flow, including starting, pausing, and ending the game, as well as managing the score and high score system.
+Event System: Unity's Event System is utilized for input detection, allowing the player to interact with the game objects through touch or mouse input.
+Music and Particle Systems: To enhance the game's audio-visual experience, Unity's built-in Music and Particle Systems are employed, adding background music and visual effects throughout the game.
+UI and Settings: The game features a user interface (UI) with settings options, allowing players to replay tutorials, toggle music and sounds, and adjust other game settings.
+
+Development Flow:
+The game starts with an initial scene that loads the necessary assets and initializes the game manager.
+Input events are detected through Unity's Event System, responding to touch or mouse input on the left and right sides of the screen.
+The game manager updates the position of the connected game objects based on input and obstacle positions.
+Collision detection is implemented to handle interactions between the game objects and obstacles.
+The score system tracks the player's progress and updates the score accordingly.
+The game manager manages the high score system, comparing the player's score with the previous high score and updating it if necessary.
+Settings options allow the player to adjust settings, including music and sound toggles, and replay the tutorial.
+Conclusion:
+The Endless 2D Arcade Game offers an enjoyable and challenging gaming experience. Through the utilization of Unity's engine, C# scripting, game manager, event system, music, particle systems, and UI settings, the game provides engaging gameplay, visual and audio effects, and customization options. The combination of these Unity technologies enables the smooth development and delivery of the game, ensuring an immersive and entertaining experience for players.
+
+Please note that this documentation provides a general overview of the project. For a more detailed and specific explanation of the implementation and code structure, additional documentation or access to the source code would be necessary.

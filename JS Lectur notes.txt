@@ -1,0 +1,38 @@
+ let arr=[1,2,3,4,5,6]
+ 
+//  for(let i in arr) //gives index
+//  {
+//      console.log(i)
+//  }
+ 
+//  for(let i of arr)// give valur of the arr
+//  {
+//      console.log(i)
+//  }
+ 
+//  function add(){
+     
+//  }
+//  cosnt add=()=>{
+     
+//  }
+
+ arr.forEach((ele, index, arr) => {//foreach never return 
+    console.log(ele,arr)
+});
+
+arr.map((ele,index,arr)=>{ //this return values 
+    console.log(ele,index,arr)
+});
+
+
+let filter=arr.filter((ele) => {
+    return  ele>3
+})
+
+console.log(filter) //gives value not boolean
+
+
+let red=arr.reduce((a,b) => {     //return sum of numbers from the array
+       return a+b;
+})
